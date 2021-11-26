@@ -1,7 +1,6 @@
 import { Negociacoes } from "../models/negociacoes.js";
 
 export class NegociacoesView {
-
   private elemento: HTMLElement;
 
   constructor(selector: string) {
