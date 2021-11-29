@@ -1,4 +1,7 @@
-// Nós módulos do JavaScript é preciso colocar a extensão do arquivo, neste caso, .js
-import { Negociacao } from "./models/negociacao.js";
-const negociacao = new Negociacao(new Date(), 10, 100);
-console.log(negociacao);
+import { NegociacaoController } from './controllers/negociacao-controller.js';
+const controller = new NegociacaoController();
+const form = document.querySelector('.form');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    controller.adicionar();
+});
